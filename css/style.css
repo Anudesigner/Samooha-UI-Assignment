@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	background: #EBF4FF;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.login-form {
+        max-width: 570px;
+    background: #fff;
+    margin: 30px auto;
+    padding: 20px;
+    text-align: center;
+    border-radius: 14px;
+    box-shadow: 0px 0px 15px #d9d9d9;
+}
+
+.login-form .input-block {
+    max-width: 300px;
+    margin: auto;
+    position: relative;
+    margin-bottom: 25px;
+}
+
+.login-form .input-block input {
+    background: #f9fafa;
+    border: 1px solid #f9fafa;
+    padding: 10px 10px;
+    width: 100%;
+    border-radius: 4px;
+    outline: none;
+}
+.login-form .input-block input:focus{
+	border-color:blue;
+}
+.login-form .input-block input::-webkit-input-placeholder { /* Edge */
+  color: #777;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.login-form .input-block input:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #777;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.login-form .input-block input::placeholder {
+  color: #777;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+.login-form .input-block a {
+    position: absolute;
+    right: -12px;
+    top: 6px;
+    padding: 5px;
+}
+
+.login-form .input-block a img {
+    width: 20px;
+}
+
+.logo {margin: 20px 0;}
+
+.login-form h2 {
+       font-size: 30px;
+    margin: 0 0 30px;
+    font-weight: 600;
+    color: #494949;
+}
+
+.links , .Note{
+    font-size: 16px;
+    margin: 30px 0;
+    color: #777;
+}
+
+.links a , .Note a{
+    color: #3F51B5;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.input-block.submit-btn {}
+
+.login-form .input-block.submit-btn input#submit {
+    max-width: 120px;
+    background: #ccc;
+    font-size: 16px;
+    color: #fff;
+}
+.eye-hide {
+    display: none;
+}
+a.eye-show-button.eye-hide-block .eye-show {
+    display: none;
+}
+
+a.eye-show-button.eye-hide-block img.eye-hide {
+    display: block;
+    position: relative;
+    top: 2px;
+}

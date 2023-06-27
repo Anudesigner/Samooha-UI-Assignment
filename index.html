@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Samooha UI Assignment</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+
+
+<div class="login-form">
+	<p class="logo"><a href="#"><img src="images/Logo.webp" /></a></p>
+	<h2>Sign up using Snowflake account</h2>
+	<form>
+		
+		<div class="input-block">
+			<input placeholder="Account locator" type="text" id="accountlocator" name="" value="">
+		</div>
+		<div class="input-block">
+			<input placeholder="Username" type="text" id="Username" name="" value="">
+		</div>
+		<div class="input-block">
+			<input placeholder="password" type="password" id="password" name="" value="">
+			<a href="javascript:void(0)" class="eye-show-button">
+				<img src="images/eye-show.png" class="eye-show" />
+				<img src="images/eye-hide.png" class="eye-hide" />
+		</a>
+			<!-- <a href="javascript:void(0)" class=""><img src="images/eye-hide.png" /></a> -->
+		</div>
+		<p class="links">By signing up, I agree to the <a href="#">Term of Services</a> and <a href="#"> Privacy Policy.</a></p>
+		<div class="input-block submit-btn">
+			<input type="submit" id="submit" value="Submit">
+		</div>
+
+		<p class="Note">Note: you can later login to Samooha as a<br /><a href="#">Provider</a> or a <a href="#"> Cosumer</a></p>
+
+
+	</form>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+<script type="text/javascript">
+	$(document).on('click', '.eye-show-button', function() {
+    $(this).toggleClass("eye-hide-block");
+    
+    var input = $("#password");
+    input.attr('type') === 'password' ? input.attr('type','text') : input.attr('type','password')
+});
+</script>
+</body>
+</html>
